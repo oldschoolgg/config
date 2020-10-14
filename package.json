@@ -1,0 +1,55 @@
+{
+	"name": "@oldschoolgg/eslint-config",
+	"version": "1.0.0",
+	"description": "Shareable TypeScript configuration and ESLint rules for all Oldschoolgg Projects",
+	"author": "@oldschoolgg",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"homepage": "https://github.com/oldschoolgg/config/",
+	"scripts": {
+		"prelint": "npm run build",
+		"lint": "eslint src tests --ext ts --fix -c dist/index.js",
+		"build": "tsc -b src",
+		"prepublishOnly": "node scripts/prepublish.mjs",
+		"postpublish": "node scripts/postpublish.mjs",
+		"prepack": "node scripts/prepublish.mjs",
+		"postpack": "node scripts/postpublish.mjs"
+	},
+	"peerDependencies": {
+		"typescript": "3.x || 4.x",
+		"@typescript-eslint/eslint-plugin": "4.x",
+		"@typescript-eslint/parser": "4.x",
+		"eslint-config-prettier": "6.x",
+		"eslint-plugin-prettier": "3.x",
+		"prettier": "2.x"
+	},
+	"files": [
+		"tsconfig.json",
+		"dist",
+		"!dist/.tsbuildinfo"
+	],
+	"engines": {
+		"node": ">=12",
+		"npm": ">=6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/oldschoolgg/config.git"
+	},
+	"bugs": {
+		"url": "https://github.com/oldschoolgg/config/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@types/node": "^14.11.8",
+		"eslint": "^7.11.0",
+		"fs-extra": "^9.0.1",
+		"typescript": "^4.0.3"
+	},
+	"dependencies": {
+		"@sapphire/eslint-config": "^1.0.3"
+	}
+}
