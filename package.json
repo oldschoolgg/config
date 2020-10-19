@@ -12,9 +12,7 @@
 		"lint": "eslint src tests --ext ts --fix -c dist/index.js",
 		"build": "tsc -b src",
 		"prepublishOnly": "node scripts/prepublish.mjs",
-		"postpublish": "node scripts/postpublish.mjs",
-		"prepack": "node scripts/prepublish.mjs",
-		"postpack": "node scripts/postpublish.mjs"
+		"postpublish": "node scripts/postpublish.mjs"
 	},
 	"peerDependencies": {
 		"typescript": "3.x || 4.x"
