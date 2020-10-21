@@ -46,7 +46,9 @@ export const config = {
 				printWidth: 100,
 				tabWidth: 4
 			}
-		]
+		],
+		'@typescript-eslint/no-throw-literal': 'off',
+		'@typescript-eslint/naming-convention': 'off'
 	},
 	parserOptions: {
 		sourceType: 'module',
