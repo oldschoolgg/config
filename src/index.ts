@@ -48,7 +48,8 @@ export const config = {
 			}
 		],
 		'@typescript-eslint/no-throw-literal': 'off',
-		'@typescript-eslint/naming-convention': 'off'
+		'@typescript-eslint/naming-convention': 'off',
+		'@typescript-eslint/default-param-last': 'off'
 	},
 	parserOptions: {
 		sourceType: 'module',
