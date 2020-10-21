@@ -46,7 +46,8 @@ export const config = {
 				printWidth: 100,
 				tabWidth: 4
 			}
-		]
+		],
+		'@typescript-eslint/no-throw-literal': 'off'
 	},
 	parserOptions: {
 		sourceType: 'module',
