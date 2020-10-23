@@ -9,7 +9,7 @@
 	"homepage": "https://github.com/oldschoolgg/config/",
 	"scripts": {
 		"prelint": "npm run build",
-		"lint": "eslint src tests --ext ts --fix -c dist/index.js",
+		"lint": "eslint src --ext ts --fix -c dist/index.js",
 		"build": "tsc -b src",
 		"prepublishOnly": "node scripts/prepublish.mjs",
 		"postpublish": "node scripts/postpublish.mjs"
@@ -43,7 +43,6 @@
 		"typescript": "^4.0.3"
 	},
 	"dependencies": {
-		"@skyra/eslint-config": "^5.3.3",
 		"@typescript-eslint/eslint-plugin": "^4.4.1",
 		"@typescript-eslint/parser": "^4.4.1",
 		"eslint-config-prettier": "^6.13.0",
