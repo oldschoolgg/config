@@ -145,65 +145,21 @@ export const config = {
 		'@typescript-eslint/unbound-method': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
 		'accessor-pairs': 'off',
-		'array-bracket-newline': ['error', 'consistent'],
-		'array-bracket-spacing': [
-			'error',
-			'never',
-			{
-				singleValue: false,
-				objectsInArrays: false,
-				arraysInArrays: false
-			}
-		],
-		'array-element-newline': 'off',
-		'arrow-body-style': ['error', 'as-needed'],
-		'arrow-parens': [
-			'error',
-			'as-needed',
-			{
-				requireForBlockBody: false
-			}
-		],
-		'arrow-spacing': [
-			'error',
-			{
-				before: true,
-				after: true
-			}
-		],
 		'block-scoped-var': 'error',
-		'block-spacing': ['error', 'always'],
-		'brace-style': [
-			'error',
-			'1tbs',
-			{
-				allowSingleLine: true
-			}
-		],
 		'callback-return': 'off',
 		'capitalized-comments': 'off',
 		'class-methods-use-this': 'off',
-		'comma-dangle': ['error', 'never'],
-		'comma-spacing': 'off',
-		'comma-style': ['error', 'last'],
 		complexity: 'off',
-		'computed-property-spacing': ['error', 'never'],
 		'consistent-return': 'off',
 		'consistent-this': ['error', 'self'],
 		'constructor-super': 'off',
-		curly: ['error', 'multi-line', 'consistent'],
 		'default-case': 'off',
-		'dot-location': ['error', 'property'],
 		'dot-notation': 'off',
-		'eol-last': ['error', 'always'],
 		eqeqeq: ['error', 'smart'],
 		'for-direction': 'off',
-		'func-call-spacing': ['error', 'never'],
 		'func-name-matching': ['warn', 'always'],
 		'func-names': ['warn', 'as-needed'],
 		'func-style': 'off',
-		'function-paren-newline': ['error', 'consistent'],
-		'generator-star-spacing': ['error', 'before'],
 		'getter-return': 'off',
 		'global-require': 'off',
 		'guard-for-in': 'warn',
@@ -211,21 +167,8 @@ export const config = {
 		'id-blacklist': 'off',
 		'id-length': 'off',
 		'id-match': 'off',
-		indent: 'off',
 		'init-declarations': 'off',
-		'jsx-quotes': ['error', 'prefer-double'],
-		'key-spacing': [
-			'error',
-			{
-				beforeColon: false,
-				afterColon: true,
-				mode: 'strict'
-			}
-		],
-		'keyword-spacing': 'off',
 		'line-comment-position': 'off',
-		'linebreak-style': ['error', 'unix'],
-		'lines-around-comment': 'off',
 		'lines-between-class-members': [
 			'error',
 			'always',
@@ -234,7 +177,6 @@ export const config = {
 			}
 		],
 		'max-depth': 'off',
-		'max-len': 'off',
 		'max-lines': 'off',
 		'max-nested-callbacks': 'off',
 		'max-params': 'off',
@@ -246,15 +188,7 @@ export const config = {
 			}
 		],
 		'multiline-comment-style': 'off',
-		'multiline-ternary': ['error', 'always-multiline'],
 		'new-cap': 'off',
-		'new-parens': 'error',
-		'newline-per-chained-call': [
-			'error',
-			{
-				ignoreChainWithDepth: 3
-			}
-		],
 		'no-alert': 'error',
 		'no-array-constructor': 'off',
 		'no-await-in-loop': 'off',
@@ -266,7 +200,6 @@ export const config = {
 		'no-class-assign': 'warn',
 		'no-compare-neg-zero': 'error',
 		'no-cond-assign': 'warn',
-		'no-confusing-arrow': 'off',
 		'no-console': 'off',
 		'no-const-assign': 'off',
 		'no-constant-condition': 'off',
@@ -296,10 +229,7 @@ export const config = {
 		'no-extra-bind': 'off',
 		'no-extra-boolean-cast': 'off',
 		'no-extra-label': 'warn',
-		'no-extra-parens': 'off',
-		'no-extra-semi': 'off',
 		'no-fallthrough': 'off',
-		'no-floating-decimal': 'error',
 		'no-func-assign': 'off',
 		'no-global-assign': 'off',
 		'no-implicit-coercion': 'error',
@@ -327,16 +257,8 @@ export const config = {
 		'no-loop-func': 'off',
 		'no-magic-numbers': 'off',
 		'no-mixed-requires': 'error',
-		'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
 		'no-multi-assign': 'warn',
-		'no-multi-spaces': [
-			'error',
-			{
-				ignoreEOLComments: true
-			}
-		],
 		'no-multi-str': 'error',
-		'no-multiple-empty-lines': 'error',
 		'no-nested-ternary': 'off',
 		'no-new': 'off',
 		'no-new-func': 'warn',
@@ -372,17 +294,14 @@ export const config = {
 		'no-shadow-restricted-names': 'error',
 		'no-sparse-arrays': 'warn',
 		'no-sync': 'off',
-		'no-tabs': 'off',
 		'no-template-curly-in-string': 'error',
 		'no-ternary': 'off',
 		'no-this-before-super': 'off',
 		'no-throw-literal': 'off',
-		'no-trailing-spaces': 'error',
 		'no-undef': 'off',
 		'no-undef-init': 'off',
 		'no-undefined': 'off',
 		'no-underscore-dangle': 'off',
-		'no-unexpected-multiline': 'error',
 		'no-unmodified-loop-condition': 'off',
 		'no-unneeded-ternary': 'off',
 		'no-unreachable': 'off',
@@ -402,39 +321,10 @@ export const config = {
 		'no-var': 'error',
 		'no-void': 'off',
 		'no-warning-comments': 'off',
-		'no-whitespace-before-property': 'error',
 		'no-with': 'error',
-		'nonblock-statement-body-position': 'off',
-		'object-curly-newline': [
-			'error',
-			{
-				multiline: true,
-				consistent: true
-			}
-		],
-		'object-curly-spacing': ['error', 'always'],
-		'object-property-newline': 'off',
 		'object-shorthand': ['error', 'always'],
 		'one-var': ['error', 'never'],
-		'one-var-declaration-per-line': 'off',
 		'operator-assignment': ['error', 'always'],
-		'operator-linebreak': [
-			'error',
-			'before',
-			{
-				overrides: {
-					'+': 'after',
-					'-': 'after'
-				}
-			}
-		],
-		'padded-blocks': [
-			'error',
-			{
-				classes: 'always'
-			}
-		],
-		'prefer-arrow-callback': 'error',
 		'prefer-const': 'off',
 		'prefer-destructuring': [
 			'error',
@@ -454,82 +344,19 @@ export const config = {
 		'prefer-rest-params': 'off',
 		'prefer-spread': 'off',
 		'prefer-template': 'warn',
-		'quote-props': [
-			'error',
-			'as-needed',
-			{
-				keywords: false,
-				unnecessary: true,
-				numbers: false
-			}
-		],
-		quotes: [
-			'error',
-			'single',
-			{
-				avoidEscape: true,
-				allowTemplateLiterals: true
-			}
-		],
 		'require-await': 'off',
 		'require-jsdoc': 'off',
 		'require-yield': 'warn',
-		'rest-spread-spacing': ['error', 'never'],
-		semi: 'off',
-		'semi-spacing': [
-			'error',
-			{
-				before: false,
-				after: true
-			}
-		],
-		'semi-style': ['error', 'last'],
 		'sort-imports': 'off',
 		'sort-keys': 'off',
 		'sort-vars': 'off',
-		'space-before-blocks': ['error', 'always'],
-		'space-before-function-paren': [
-			'error',
-			{
-				anonymous: 'never',
-				named: 'never',
-				asyncArrow: 'always'
-			}
-		],
-		'space-in-parens': ['error', 'never'],
-		'space-infix-ops': [
-			'error',
-			{
-				int32Hint: true
-			}
-		],
-		'space-unary-ops': [
-			'error',
-			{
-				words: true,
-				nonwords: false
-			}
-		],
 		'spaced-comment': ['error', 'always'],
 		strict: ['error', 'never'],
-		'switch-colon-spacing': [
-			'error',
-			{
-				after: true,
-				before: false
-			}
-		],
 		'symbol-description': 'warn',
-		'template-curly-spacing': ['error', 'never'],
-		'template-tag-spacing': ['error', 'never'],
-		'unicode-bom': ['error', 'never'],
 		'use-isnan': 'error',
 		'valid-jsdoc': 'off',
 		'valid-typeof': 'off',
 		'vars-on-top': 'off',
-		'wrap-iife': ['error', 'inside'],
-		'wrap-regex': 'off',
-		'yield-star-spacing': ['error', 'before'],
 		yoda: 'error',
 		'simple-import-sort/sort': 'error',
 		'prettier/prettier': [
@@ -543,7 +370,6 @@ export const config = {
 				tabWidth: 4
 			}
 		],
-		'no-mixed-operators': 'off',
 		'array-callback-return': 'off',
 		'@typescript-eslint/explicit-member-accessibility': 'off',
 		'@typescript-eslint/prefer-for-of': 'off',
