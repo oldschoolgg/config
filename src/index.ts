@@ -33,13 +33,6 @@ export const config = {
 			}
 		],
 		'@typescript-eslint/class-literal-property-style': 'error',
-		'@typescript-eslint/comma-spacing': [
-			'error',
-			{
-				before: false,
-				after: true
-			}
-		],
 		'@typescript-eslint/consistent-type-definitions': 'error',
 		'@typescript-eslint/default-param-last': 'error',
 		'@typescript-eslint/dot-notation': [
@@ -52,28 +45,7 @@ export const config = {
 		],
 		'@typescript-eslint/explicit-function-return-type': 'off',
 		'@typescript-eslint/explicit-module-boundary-types': 'off',
-		'@typescript-eslint/indent': ['error', 'tab'],
 		'@typescript-eslint/init-declarations': 'error',
-		'@typescript-eslint/keyword-spacing': [
-			'error',
-			{
-				before: true,
-				after: true
-			}
-		],
-		'@typescript-eslint/member-delimiter-style': [
-			'error',
-			{
-				multiline: {
-					delimiter: 'semi',
-					requireLast: true
-				},
-				singleline: {
-					delimiter: 'semi',
-					requireLast: false
-				}
-			}
-		],
 		'@typescript-eslint/member-ordering': [
 			'error',
 			{
@@ -139,8 +111,6 @@ export const config = {
 		'@typescript-eslint/no-empty-interface': 'off',
 		'@typescript-eslint/no-explicit-any': 'off',
 		'@typescript-eslint/no-extra-non-null-assertion': 'error',
-		'@typescript-eslint/no-extra-parens': 'off',
-		'@typescript-eslint/no-extra-semi': 'error',
 		'@typescript-eslint/no-extraneous-class': 'error',
 		'@typescript-eslint/no-for-in-array': 'error',
 		'@typescript-eslint/no-implied-eval': 'error',
@@ -171,9 +141,7 @@ export const config = {
 		'@typescript-eslint/prefer-string-starts-ends-with': 'error',
 		'@typescript-eslint/promise-function-async': 'off',
 		'@typescript-eslint/restrict-plus-operands': 'error',
-		'@typescript-eslint/semi': 'error',
 		'@typescript-eslint/switch-exhaustiveness-check': 'warn',
-		'@typescript-eslint/type-annotation-spacing': 'error',
 		'@typescript-eslint/unbound-method': 'error',
 		'@typescript-eslint/unified-signatures': 'error',
 		'accessor-pairs': 'off',
