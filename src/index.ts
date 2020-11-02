@@ -362,12 +362,13 @@ export const config = {
 		'prettier/prettier': [
 			'error',
 			{
-				semi: true,
-				trailingComma: 'none',
-				useTabs: true,
-				singleQuote: true,
+				arrowParens: 'avoid',
 				printWidth: 100,
-				tabWidth: 4
+				semi: true,
+				singleQuote: true,
+				tabWidth: 4,
+				trailingComma: 'none',
+				useTabs: true
 			}
 		],
 		'array-callback-return': 'off',
