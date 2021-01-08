@@ -1,6 +1,6 @@
 {
 	"name": "@oldschoolgg/eslint-config",
-	"version": "1.0.0",
+	"version": "1.0.5",
 	"description": "Shareable TypeScript configuration and ESLint rules for all Oldschoolgg Projects",
 	"author": "@oldschoolgg",
 	"license": "MIT",
