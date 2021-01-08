@@ -359,18 +359,6 @@ export const config = {
 		'vars-on-top': 'off',
 		yoda: 'error',
 		'simple-import-sort/sort': 'error',
-		'prettier/prettier': [
-			'error',
-			{
-				arrowParens: 'avoid',
-				printWidth: 100,
-				semi: true,
-				singleQuote: true,
-				tabWidth: 4,
-				trailingComma: 'none',
-				useTabs: true
-			}
-		],
 		'array-callback-return': 'off',
 		'@typescript-eslint/explicit-member-accessibility': 'off',
 		'@typescript-eslint/prefer-for-of': 'off',
