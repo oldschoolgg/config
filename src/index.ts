@@ -9,7 +9,7 @@
  */
 export const config = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'import', 'simple-import-sort'],
+  plugins: ['simple-import-sort', 'import', '@typescript-eslint'],
   extends: ['prettier', 'plugin:prettier/recommended'],
   env: {
     es6: true,
@@ -354,7 +354,6 @@ export const config = {
     'sort-imports': 'off',
     'sort-keys': 'off',
     'sort-vars': 'off',
-    'import/no-duplicates': ['error', { considerQueryString: true }],
     'spaced-comment': ['error', 'always'],
     strict: ['error', 'never'],
     'symbol-description': 'warn',
@@ -363,8 +362,6 @@ export const config = {
     'valid-typeof': 'off',
     'vars-on-top': 'off',
     yoda: 'error',
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'error',
     'array-callback-return': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/prefer-for-of': 'off',
@@ -379,7 +376,12 @@ export const config = {
       { blankLine: 'always', prev: 'const', next: 'export' }
     ],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single', { avoidEscape: true }]
+    quotes: ['error', 'single', { avoidEscape: true }],
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error'
   },
   parserOptions: {
     sourceType: 'module',
