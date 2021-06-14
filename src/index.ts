@@ -10,7 +10,7 @@
 export const config = {
   parser: "@typescript-eslint/parser",
   plugins: ["@typescript-eslint", "simple-import-sort"],
-  extends: ["prettier/@typescript-eslint", "plugin:prettier/recommended"],
+  extends: ["prettier", "plugin:prettier/recommended"],
   env: {
     es6: true,
     es2017: true,
@@ -358,7 +358,8 @@ export const config = {
     "valid-typeof": "off",
     "vars-on-top": "off",
     yoda: "error",
-    "simple-import-sort/sort": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
     "array-callback-return": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/prefer-for-of": "off",
@@ -372,6 +373,7 @@ export const config = {
       { blankLine: "always", prev: "import", next: "export" },
       { blankLine: "always", prev: "const", next: "export" },
     ],
+    "linebreak-style": ["error", "unix"],
   },
   parserOptions: {
     sourceType: "module",
