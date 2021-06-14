@@ -21,7 +21,12 @@ export const config = {
   rules: {
     'prettier/prettier': [
       'error',
-      { singleQuote: true, trailingComma: 'none' }
+      {
+        singleQuote: true,
+        trailingComma: 'none',
+        printWidth: 120,
+        arrowParens: 'avoid'
+      }
     ],
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'off',
