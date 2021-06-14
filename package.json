@@ -9,10 +9,11 @@
 	"homepage": "https://github.com/oldschoolgg/config/",
 	"scripts": {
 		"prelint": "npm run build",
-		"lint": "eslint src --ext ts --fix -c dist/index.js",
+		"lint": "eslint \"{src,ts-config}/**/*.ts\" --fix",
 		"build": "tsc -b src",
 		"prepublishOnly": "node scripts/prepublish.mjs",
-		"postpublish": "node scripts/postpublish.mjs"
+		"postpublish": "node scripts/postpublish.mjs",
+		"test": "eslint \"{src,ts-config}/**/*.ts\""
 	},
 	"peerDependencies": {
 		"typescript": "3.x || 4.x"
