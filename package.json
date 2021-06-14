@@ -9,10 +9,11 @@
 	"homepage": "https://github.com/oldschoolgg/config/",
 	"scripts": {
 		"prelint": "npm run build",
-		"lint": "eslint src --ext ts --fix -c dist/index.js",
+		"lint": "eslint \"{src,ts-config}/**/*.ts\" --fix",
 		"build": "tsc -b src",
 		"prepublishOnly": "node scripts/prepublish.mjs",
-		"postpublish": "node scripts/postpublish.mjs"
+		"postpublish": "node scripts/postpublish.mjs",
+		"test": "eslint \"{src,ts-config}/**/*.ts\""
 	},
 	"peerDependencies": {
 		"typescript": "3.x || 4.x"
@@ -38,16 +39,17 @@
 	},
 	"devDependencies": {
 		"@types/node": "^14.11.8",
-		"eslint": "^7.11.0",
+		"eslint": "^7.28.0",
 		"fs-extra": "^9.0.1",
-		"typescript": "^4.0.3"
+		"typescript": "^4.3.2"
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^4.4.1",
-		"@typescript-eslint/parser": "^4.4.1",
-		"eslint-config-prettier": "^6.13.0",
-		"eslint-plugin-prettier": "^3.1.4",
-		"eslint-plugin-simple-import-sort": "^5.0.3",
-		"prettier": "^2.1.2"
+		"@typescript-eslint/eslint-plugin": "^4.26.1",
+		"@typescript-eslint/parser": "^4.26.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"prettier": "^2.3.1"
 	}
 }
