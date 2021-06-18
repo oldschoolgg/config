@@ -55,34 +55,6 @@ export const config = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/init-declarations': 'error',
-    '@typescript-eslint/member-ordering': [
-      'error',
-      {
-        default: [
-          'signature',
-          'public-instance-field',
-          'protected-instance-field',
-          'private-instance-field',
-          'instance-field',
-          'public-constructor',
-          'protected-constructor',
-          'private-constructor',
-          'constructor',
-          'public-instance-method',
-          'protected-instance-method',
-          'private-instance-method',
-          'instance-method',
-          'public-static-field',
-          'protected-static-field',
-          'private-static-field',
-          'static-field',
-          'public-static-method',
-          'protected-static-method',
-          'private-static-method',
-          'static-method'
-        ]
-      }
-    ],
     '@typescript-eslint/naming-convention': [
       'error',
       {
