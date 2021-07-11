@@ -9,7 +9,7 @@
  */
 export const config = {
   parser: '@typescript-eslint/parser',
-  plugins: ['simple-import-sort', 'import', '@typescript-eslint'],
+  plugins: ['simple-import-sort', 'import', '@typescript-eslint', 'unicorn'],
   extends: ['prettier', 'plugin:prettier/recommended'],
   env: {
     es6: true,
@@ -19,6 +19,28 @@ export const config = {
     jest: true
   },
   rules: {
+    'unicorn/numeric-separators-style': [
+      'error',
+      {
+        onlyIfContainsSeparator: false,
+        hexadecimal: {
+          minimumDigits: 0,
+          groupLength: 2
+        },
+        binary: {
+          minimumDigits: 0,
+          groupLength: 4
+        },
+        octal: {
+          minimumDigits: 0,
+          groupLength: 4
+        },
+        number: {
+          minimumDigits: 5,
+          groupLength: 3
+        }
+      }
+    ],
     'prettier/prettier': [
       'error',
       {
