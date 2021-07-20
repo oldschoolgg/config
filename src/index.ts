@@ -144,7 +144,7 @@ export const config = {
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/promise-function-async': 'off',
     '@typescript-eslint/restrict-plus-operands': 'error',
-    '@typescript-eslint/switch-exhaustiveness-check': 'warn',
+    '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
     'accessor-pairs': 'off',
