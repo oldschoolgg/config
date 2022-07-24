@@ -7,6 +7,7 @@
  * }
  * ```
  */
+/* eslint-disable @typescript-eslint/naming-convention */
 export const config = {
   parser: '@typescript-eslint/parser',
   plugins: ['simple-import-sort', 'import', '@typescript-eslint', 'unicorn'],
@@ -380,7 +381,20 @@ export const config = {
     'simple-import-sort/exports': 'error',
     'import/first': 'error',
     'import/newline-after-import': 'error',
-    'import/no-duplicates': 'error'
+    'import/no-duplicates': 'error',
+    '@typescript-eslint/strict-boolean-expressions': [
+      'error',
+      {
+        allowString: false,
+        allowNumber: false,
+        allowNullableObject: true,
+        allowNullableBoolean: true,
+        allowNullableString: true,
+        allowNullableNumber: true,
+        allowAny: false,
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing: false
+      }
+    ]
   },
   parserOptions: {
     sourceType: 'module',
